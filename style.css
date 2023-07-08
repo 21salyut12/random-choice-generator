@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 2px solid;
+    border-radius: 20px;
+    height: 37.5vh;
+    width: 25vw;
+    margin: 30vh auto;
+    overflow: hidden;
+}
+
+#choices {
+    position: absolute;
+    top: 1vh;
+    text-align: center;
+    width: 169px;
+    height: 169px;
+}
+
+#choiceBtn {
+    position: absolute;
+    bottom: -1vh;
+    width: 25vw;
+    height: 5vh;
+    text-align: center;
+}
+
+#choicesBtn {
+    font-size: 5rem;
+    font-family: sans-serif;
+}
+
+@media only screen and (min-width: 480px) {
+    .container {
+        max-height: 25vh;
+    }
+
+    #choices {
+        max-width: 120px;
+        height: 130px;
+    }
+}
